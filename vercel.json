@@ -4,5 +4,9 @@
       "source": "/(.*)",
       "destination": "/"
     }
-  ]
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install"
 }
