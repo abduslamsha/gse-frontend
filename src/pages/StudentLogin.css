@@ -1,0 +1,154 @@
+.student-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #081120;
+    padding: 20px;
+}
+
+.student-login-card {
+    background: #1c2541;
+    padding: 40px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-logo {
+    font-size: 64px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-header h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0 0 5px 0;
+}
+
+.login-header p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 0;
+}
+
+.login-error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form .form-group label {
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.login-form .form-group input {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #0b132b;
+    color: white;
+    font-size: 15px;
+    transition: outline 0.3s;
+}
+
+.login-form .form-group input:focus {
+    outline: 2px solid #f4a261;
+}
+
+.login-form .form-group input::placeholder {
+    color: #6a7a95;
+}
+
+.login-btn {
+    background: #f4a261;
+    color: #0b132b;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    background: #e08f4d;
+}
+
+.login-btn:disabled {
+    background: #6a7a95;
+    cursor: not-allowed;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.login-footer p {
+    color: #6a7a95;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.login-link {
+    margin-top: 10px;
+}
+
+.back-to-admin {
+    background: transparent;
+    color: #94a3b8;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.back-to-admin:hover {
+    color: #f4a261;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .student-login-card {
+        padding: 30px 20px;
+    }
+
+    .login-logo {
+        font-size: 48px;
+    }
+
+    .login-header h1 {
+        font-size: 24px;
+    }
+}

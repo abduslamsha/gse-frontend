@@ -1,0 +1,256 @@
+.notifications-container {
+    display: flex;
+    min-height: 100vh;
+    background: #081120;
+}
+
+.notifications-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.page-title {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
+
+.unread-badge {
+    background: #dc2626;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-mark-all {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-mark-all:hover {
+    background: #2563eb;
+}
+
+.btn-refresh {
+    background: #1c2541;
+    color: #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-refresh:hover {
+    background: #2a3555;
+    color: white;
+}
+
+.loading-state {
+    text-align: center;
+    color: #94a3b8;
+    padding: 60px;
+}
+
+/* No Notifications */
+.no-notifications {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty-icon {
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.no-notifications h3 {
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.no-notifications p {
+    color: #6a7a95;
+}
+
+/* Notifications List */
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.notification-item {
+    display: flex;
+    gap: 16px;
+    background: #1c2541;
+    padding: 18px 22px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.notification-item:hover {
+    background: #263050;
+}
+
+.notification-item.unread {
+    border-left-color: #f4a261;
+    background: #1f2a4a;
+}
+
+.notification-item.unread:hover {
+    background: #2a3555;
+}
+
+.notification-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+
+.notification-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.notification-header h4 {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+}
+
+.notification-time {
+    color: #6a7a95;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.notification-text {
+    color: #c0cfe0;
+    margin: 6px 0 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.notification-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.unread-dot {
+    color: #f4a261;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn-delete-note {
+    background: transparent;
+    color: #6a7a95;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.btn-delete-note:hover {
+    background: rgba(220, 38, 38, 0.2);
+    color: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .notifications-content {
+        padding: 15px;
+    }
+
+    .notifications-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header-left {
+        justify-content: space-between;
+    }
+
+    .header-actions {
+        flex-direction: column;
+    }
+
+    .btn-mark-all,
+    .btn-refresh {
+        width: 100%;
+        text-align: center;
+    }
+
+    .notification-item {
+        padding: 14px 16px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .notification-icon {
+        font-size: 24px;
+    }
+
+    .notification-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .notifications-content {
+        padding: 10px;
+    }
+
+    .page-title {
+        font-size: 22px;
+    }
+
+    .notification-item {
+        padding: 12px;
+    }
+}

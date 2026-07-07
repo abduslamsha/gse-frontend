@@ -1,0 +1,417 @@
+.announcements-container {
+    display: flex;
+    min-height: 100vh;
+    background: #081120;
+}
+
+.announcements-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.page-title {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Messages */
+.message {
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.message.success {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.message.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.section-header h2 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.btn-add {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-add:hover {
+    background: #16a34a;
+}
+
+/* Form Card */
+.form-card {
+    background: #0b132b;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.form-card h3 {
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+.announcement-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.announcement-form .full-width {
+    grid-column: 1 / -1;
+}
+
+.announcement-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-form .form-group label {
+    color: #94a3b8;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.announcement-form .form-group input,
+.announcement-form .form-group select,
+.announcement-form .form-group textarea {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    background: #1c2541;
+    color: white;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.announcement-form .form-group textarea {
+    resize: vertical;
+}
+
+.announcement-form .form-group input:focus,
+.announcement-form .form-group select:focus,
+.announcement-form .form-group textarea:focus {
+    outline: 2px solid #f4a261;
+}
+
+.announcement-form .helper-text {
+    color: #6a7a95;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.save-btn {
+    background: #f4a261;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0b132b;
+    transition: background 0.3s;
+}
+
+.save-btn:hover {
+    background: #e08f4d;
+}
+
+.cancel-btn {
+    background: #6a7a95;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #5a6a85;
+}
+
+/* Announcements List - Admin */
+.announcements-list-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.announcement-item-admin {
+    background: #1c2541;
+    padding: 20px;
+    border-radius: 16px;
+    border-left: 4px solid #f4a261;
+}
+
+.announcement-item-admin .announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.announcement-title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.announcement-title-group h3 {
+    color: white;
+    margin: 0;
+    font-size: 17px;
+}
+
+.announcement-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.audience-badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.audience-badge.all {
+    background: #8b5cf6;
+    color: white;
+}
+
+.audience-badge.students {
+    background: #22c55e;
+    color: white;
+}
+
+.audience-badge.teachers {
+    background: #3b82f6;
+    color: white;
+}
+
+.grade-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    background: #0b132b;
+    border-radius: 12px;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.announcement-date {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.announcement-content {
+    color: #c0cfe0;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-badge.published {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge.draft {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Announcement Actions */
+.announcement-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.announcement-actions button {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-publish {
+    background: #3b82f6;
+    color: white;
+}
+
+.btn-publish:hover {
+    background: #2563eb;
+}
+
+.btn-publish.published {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-publish.published:hover {
+    background: #d97706;
+}
+
+.btn-publish.draft {
+    background: #22c55e;
+    color: white;
+}
+
+.btn-publish.draft:hover {
+    background: #16a34a;
+}
+
+.btn-edit {
+    background: #f4a261;
+    color: #0b132b;
+}
+
+.btn-edit:hover {
+    background: #e08f4d;
+}
+
+.btn-delete {
+    background: #dc2626;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #b91c1c;
+}
+
+/* No Data */
+.no-data {
+    text-align: center;
+    color: #6a7a95;
+    padding: 40px;
+}
+
+.no-data p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.no-data-sub {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-top: 8px !important;
+}
+
+.loading-text {
+    color: #94a3b8;
+    text-align: center;
+    padding: 40px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .announcements-content {
+        padding: 15px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .announcement-form .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .announcement-item-admin .announcement-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+    .announcement-actions {
+        flex-direction: column;
+    }
+
+    .announcement-actions button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .announcement-meta {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcements-content {
+        padding: 10px;
+    }
+
+    .page-title {
+        font-size: 22px;
+    }
+
+    .announcement-item-admin {
+        padding: 15px;
+    }
+
+    .announcement-title-group h3 {
+        font-size: 15px;
+    }
+}
